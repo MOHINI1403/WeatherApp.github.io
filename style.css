@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish:wght@300&family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+
+
+}
+body{
+    font-family: 'poppins',sans-serif;
+   
+   background: url("images/background.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;;
+    /*background-size: contain;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: 100% 100%;
+    
+    overflow:hidden;/*to avoid scrooling*/
+    /*height:100vh;*/
+    
+    
+
+}
+.container{
+    padding: 20px 70px;
+    color:#fff;
+    
+    
+
+}
+.search{
+    margin-top:20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border:0;
+    outline: 0;
+    background: #ebfffc;
+    color:#555;
+    padding: 10px 25px;
+    height:60px;
+    border-radius: 30px;
+    flex:1;
+    margin-right:16px;
+    font-size: 18px;
+
+}
+.search input:focus{
+    background-color: rgb(255, 254, 253);
+}
+.search button{
+    border:0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+
+}
+
+.search button img{
+    width: 16px;
+    margin-top:5px;
+}
+.current-info{
+    margin-top:5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Setting the time*/
+.date-container .time{
+    font-size:70px;
+    font-weight:100;
+
+}
+.date-container #am-pm{
+    font-size:30px;
+    margin-left: 20px;
+
+}
+.date-container .date{
+    font-size: 30px;
+
+}
+.place-container{
+    text-align: end;
+    margin-top:15px;
+
+}
+.place-container .time-zone{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+.place-container .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+.weather-icon{
+    width:80px;
+    margin-top:2rem;
+    
+}
+
+.temp{
+    
+    margin-top:2.2rem;
+    font-weight:900;
+    font-size:1.5rem;
+    
+
+}
+.future-forecast{
+    background: rgba(24, 24, 27, 0.5);
+    
+    padding:25px;
+    position:fixed;
+    bottom:0;
+    display: flex;
+    color:rgb(248, 246, 247);
+    text-transform: uppercase;
+    font-weight: 800;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    justify-content: start;
+    align-items: none;
+    overflow-y: scroll;
+    
+
+    
+}
+.future-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    width:60vh;
+
+    align-items: center;
+    justify-content: center;
+    margin:0 10px;
+    border:1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+}
+.future-forecast .weather-forecast-item img{
+   
+    height:90px;
+    width:90px;
+    padding:20px;
+}
+.future-forecast .weather-forecast-item .other{
+    align-items: center;
+    text-align: center;
+}
+.future-forecast .weather-forecast-item .property{
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: #3c3c44;
+    text-align: center;
+    font-size: larger;
+}
+.humidity,.pressure,.windSpeed,.sunrise,.sunset,.visibility{
+    font-size:18px;
+    padding-top:15px;
+    color:darkred;
+}
+.future-forecast .weather-forecast{
+    display: flex;
+
+
+}
+@media only screen and (max-width:730px){
+    
+    .future-forecast{
+        padding:15px;
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+        
+    }
+    .search button{
+        width:4vw;
+        height: 4vh;
+    }
+    .search button img{
+        width:1vh;
+    }
+    .container{
+        padding: 20px;
+
+    }
+    .date-container .time{
+        font-size: 40px;
+    }
+    .weather-icon{
+        width:80px;
+    }
+    .date-container #am-pm{
+        font-size: 20px;
+    }
+    .date-container .date{
+        font-size:20px;
+    }
+    .place-container{
+        text-align: end;
+        margin-top:15px;
+    }
+    .place-container .time-zone{
+        text-transform: uppercase;
+        font-size:15px;
+    }.current-info .others{
+        padding: 12px;
+    }
+    .current-info .others{
+        font-size:14px;
+    }
+    .temp{
+        font-size:1rem;
+    }
+}
+
+

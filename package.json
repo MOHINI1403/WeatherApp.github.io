@@ -1,0 +1,15 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/MOHINI1403/DummyWeatherApp.github.io.git)"
+  },
+  "author": "Mohini Chauhan",
+  "license": "ISC"
+}

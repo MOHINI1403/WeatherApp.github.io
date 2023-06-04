@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport"content="width=device-width,inital-scale=1.0">
+
+
+        <title>WeatherApp</title>
+        <meta name="title"content="WeatherApp">
+        <meta name="description"content="WeatherApp is an app made by Mohini Chauhan">
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+
+        <!--Google Font Link-->
+        <link rel="preconnect"href="https://fonts.googleapis.com">
+        <link rel="preconnect"href="hhtps://fonts.gstatic.com crossorigin">
+        <link rel="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"rel="stylesheet">
+
+
+        <!--custom css link-->
+        <link rel="stylesheet"href="style.css">
+        
+
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="search">
+                <input type="text"placeholder="Enter the city name"spellcheck="false">
+                <button class="search-btn"><img src="images/search.png"></button>
+            </div>
+            <div class="current-info">
+                <div class="date-container">
+                    <div class="time"id="time">
+                        12:30 <span id="am-pm">PM</span>
+                    </div>
+                    <div class="date"id="date">
+                        Monday,24 May
+                    </div>
+                    <div class="others">
+                        
+                        <img src="images/rain.png"class="weather-icon">
+                        <div id="temp" class="temp">Temp : 25.6&#176; C</div>
+                        
+                    </div>
+                </div>
+                <div class="place-container">
+                    <div class="time-zone"id="time-zone">
+                        Asia/Delhi
+                    </div>
+                    <div id="country"class="country">IN</div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="future-forecast">
+            <div class="weather-forecast" id="weather-forecast">
+                
+                <div class="weather-forecast-item">
+                    
+                    <img src="images/humidity.png"width="100px"height="100px">
+                    <div class="other">
+                        <div class="property">Humidity</div>
+                        <div id="humidity" class="humidity">50%</div>
+                        
+                
+                    </div>
+                    
+                    
+                </div>
+                <div class="weather-forecast-item">
+                    <img src="images/pressure.png"width="100px"height="100px">
+                    <div class="other">
+                        <div class="property">Pressure</div>
+                    
+                        <div id="pressure" class="pressure">1atm</div>
+
+                    </div>
+                    
+                </div>
+                <div class="weather-forecast-item">
+                    <img src="images/windSpeed.png"width="100px"height="100px">
+                    <div class="other">
+                        <div class="property">Wind Speed</div>
+                    
+                        <div id="windSpeed" class="windSpeed">1knot</div>
+
+                    </div>
+                    
+                </div>
+                <div class="weather-forecast-item">
+                    <img src="images/sunrise.png"width="100px"height="100px">
+                    <div class="other">
+                        <div class="property">Sunrise</div>
+                    
+                    
+                        <div id="sunrise" class="sunrise">5:40AM</div>
+
+                    </div>
+                    
+                </div>
+                <div class="weather-forecast-item">
+                    <img src="images/sunset.png"width="100px"height="100px">
+                    <div class="other">
+                        <div class="property">Sunset</div>
+                    
+                        <div id="sunset" class="sunset">7:00PM</div>
+
+                    </div>
+                    
+                </div>
+                <div class="weather-forecast-item">
+                    <img src="images/visibility.png"width="100px"height="100px">
+                    <div class="other">
+                        <div class="property">Visibility</div>
+                        <div id="visibility" class="visibility">5:40AM</div>
+
+                    </div>
+                   
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+
+        <script src="app.js"></script>
+    </body>
