@@ -117,6 +117,11 @@ function showWeatherData(data){
     weatherIcon.src="images/haze.png";
 
    }
+   document.querySelector('.future-forecast').style.display="flex";
+   weatherIcon.style.display="inherit";
+   document.querySelector('.temp').style.display="inherit";
+  
+    
   
 
 
