@@ -6,7 +6,7 @@ Certainly! Below is an example of a simple README file for a weather app built w
 
 # Simple Weather App
 
-![Weather App Screenshot](screenshot.png)
+![Weather App Screenshot](https://github.com/MOHINI1403/WeatherApp.github.io/blob/main/images/screenshot.PNG)
 
 ## Overview
 
